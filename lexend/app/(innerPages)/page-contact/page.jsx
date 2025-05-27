@@ -6,6 +6,8 @@ import ContactLinks from "@/components/innerpages/ContactLinks";
 import Faq from "@/components/homes/home-2/Faq";
 import Brands from "@/components/common/Brands2";
 import Blogs from "@/components/homes/home-2/Blogs";
+import { accordionItems } from "@/data/faq";
+
 export const metadata = {
   title:
     "Contact 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -21,7 +23,7 @@ export default function ContactPage() {
           <Contact1 />
 
           <ContactLinks />
-          <Faq />
+          <Faq faqData={accordionItems}/>
           <div
             id="clients_brands"
             className="clients-brands section panel overflow-hidden"

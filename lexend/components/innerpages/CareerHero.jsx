@@ -47,10 +47,7 @@ export default function CareerHero() {
                 Join Our Empire.
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                We are looking for people that share our vision. Are you
-                adaptable, driven, and friendly? Do you thrive in a fast-paced
-                work environment where collaboration is the norm? If the answer
-                is yes, then you’re a what we looking for.
+                Are you an innovative mind with a different outlook, eager to build the future with us? Spacenos offers a supportive platform to learn, grow, and earn, helping you become an internationally recognized professional. We are a pool of opportunities for those ready not just to work, but to shape a future for themselves and others..
               </p>
             </div>
             <div className="panel">

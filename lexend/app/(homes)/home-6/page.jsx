@@ -12,6 +12,7 @@ import Pricing from "@/components/homes/home-6/Pricing";
 import Team from "@/components/homes/home-6/Team";
 import Testimonials from "@/components/homes/home-6/Testimonials";
 import VideoComponent from "@/components/homes/home-6/VideoComponent";
+import { accordionItems } from "@/data/faq";
 import React from "react";
 export const metadata = {
   title:
@@ -36,7 +37,7 @@ export default function HomePage6() {
           <Elements />
           <Pricing />
           <Testimonials />
-          <Faq />
+          <Faq faqData={accordionItems} />
           <Team />
           <Blogs />
           <Cta />

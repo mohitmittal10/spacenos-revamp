@@ -2,7 +2,7 @@ import Accordion from "@/components/common/Accordion";
 import React from "react";
 import Link from "next/link";
 
-export default function Faq() {
+export default function Faq({faqData}) {
   return (
     <div id="faq" className="faq section panel  scrollSpysection">
       <div className="section-outer panel py-6 xl:py-10">
@@ -44,7 +44,7 @@ export default function Faq() {
                     className="gap-2 uc-accordion"
                     data-uc-accordion="targets: > li; multiple: true"
                   >
-                    <Accordion parentClass="panel p-2 md:p-4 border rounded-1-5" />
+                    <Accordion faqData={faqData} parentClass="panel p-2 md:p-4 border rounded-1-5" />
                   </ul>
                 </div>
               </div>

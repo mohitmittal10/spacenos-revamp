@@ -6,7 +6,12 @@ import CareerBenefits from "@/components/innerpages/CareerBenefits";
 import CareerOpenings from "@/components/innerpages/CareerOpenings";
 import Feedback from "@/components/homes/home-2/Feedback";
 import Brands from "@/components/innerpages/Brands";
-import Blogs from "@/components/homes/home-2/Blogs";
+//import Blogs from "@/components/homes/home-2/Blogs";
+import Faq from "@/components/homes/home-2/Faq";
+import { accordionItemsCareer } from "@/data/faqCareers";
+import AboutValues from "@/components/innerpages/AboutValues";
+import { panelsDataCareers } from "@/data/plansCareers";
+import CareerNewsletter from "@/components/innerpages/CareerNewsletter";
 export const metadata = {
   title:
     "Career || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -24,7 +29,11 @@ export default function CareerPage() {
           <CareerOpenings />
           <Feedback />
           <Brands />
-          <Blogs />
+          <AboutValues panelsData={panelsDataCareers}/>
+          
+          <Faq faqData={accordionItemsCareer} /> 
+          <CareerNewsletter />
+          
         </div>
         <Footer2 />
       </div>

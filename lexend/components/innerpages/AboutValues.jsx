@@ -1,8 +1,8 @@
-import { panelsData } from "@/data/plans";
+//import { panelsData } from "@/data/plans";
 import React from "react";
 import Image from "next/image";
 
-export default function AboutValues() {
+export default function AboutValues({panelsData}) {
   return (
     <div
       id="about_values"
