@@ -43,7 +43,7 @@ export default function AboutPage() {
             </div>
           </div>
           <About2 />
-          <AboutValues panelsData={panelsData}/>
+          <AboutValues data={panelsData}/>
           <Feedback />
           <Timeline />
           <Team />

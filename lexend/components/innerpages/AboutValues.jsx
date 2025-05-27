@@ -1,8 +1,10 @@
-//import { panelsData } from "@/data/plans";
+import { panelsData } from "@/data/plans";
 import React from "react";
 import Image from "next/image";
 
-export default function AboutValues({panelsData}) {
+export default function AboutValues({
+    data = panelsData
+  }) {
   return (
     <div
       id="about_values"
@@ -22,7 +24,7 @@ export default function AboutValues({panelsData}) {
                 className="row child-cols-12 sm:child-cols-6 g-2 lg:g-4 justify-between"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
               >
-                {panelsData.map((panel) => (
+                {data.map((panel) => (
                   <div key={panel.id}>
                     <div className="panel vstack gap-2 p-4 lg:py-6 rounded-2 bg-secondary dark:bg-gray-800">
                       <Image

@@ -29,7 +29,7 @@ export default function CareerPage() {
           <CareerOpenings />
           <Feedback />
           <Brands />
-          <AboutValues panelsData={panelsDataCareers}/>
+          <AboutValues data={panelsDataCareers}/>
           
           <Faq faqData={accordionItemsCareer} /> 
           <CareerNewsletter />
