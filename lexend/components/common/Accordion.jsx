@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { accordionItems } from "@/data/faq";
 
 export default function Accordion({
-  faqData,
+  faqData = accordionItems,
   parentClass = "",
 }) {
   const parentRefs = useRef([]);
